@@ -14,10 +14,17 @@ const config: HardhatUserConfig = {
       chainId: 5,
       accounts: [process.env['FROM'] || ''],
     },
-    altDevNet: {
+    'alt-devnet': {
       url: "https://devnet-rpc.altlayer.io/",
       chainId: 9990,
       accounts: [process.env['FROM'] || ''],
+    },
+    'moonbeam-localhost': {
+      url: "http://127.0.0.1:9933/",
+      chainId: 1281,
+      accounts: {
+        mnemonic: "bottom drive obey lake curtain smoke basket hold race lonely fit walk"
+      }
     }
   },
 
